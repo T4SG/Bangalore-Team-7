@@ -1,12 +1,13 @@
+<
 <html>
 <body>
 <form method="" action="">
-select school
-<select>
+
  <% String url="jdbc:mysql://localhost:3306/test";
          String user="root";
                  Connection connection=null;
          Statement stmt;
+		 int count=0;
         
          try{
              Class.forName("com.mysql.jdbc.Driver");
@@ -14,14 +15,16 @@ select school
              connection=DriverManager.getConnection(url,user,"");
              if(connection!=null)
               { stmt=connection.createStatement();
-               String query1="select * from school ";
-               stmt.executeQuery(query1);
+               String query1="select * from fb_ws_ques";
+			   
+              ResultSet rs= stmt.executeQuery(query1);
             
               
            while(rs.next())
-           {
-			  out.println("<option>"+rs.getString('name')+"</option>"); 
-			   
+           { String name=q+to_string(count);
+			  out.println(rs.getString('Ques'));
+			  out.println("<br><input type='text' name=<= name>/><br>");
+			   count++;
                  
           }
               
@@ -32,7 +35,7 @@ select school
                                   
             	
                           %>
-						  </select>
+						  
 						  </form>
 						  </body>
 						  </html>
