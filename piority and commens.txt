@@ -1,0 +1,18 @@
+
+CREATE TABLE IF NOT EXISTS `comments` (
+  `scl_id` int(11) NOT NULL,
+  `m_id` varchar(50) NOT NULL,
+  `pbl_id` int(11) NOT NULL,
+  `comm` varchar(5000) NOT NULL,
+  `time_stamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY(scl_id,m_id,pbl_id)
+	) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE IF NOT EXISTS `priority` (
+  `pr_id` int(11) NOT NULL,
+  `pblm_id` int(11) NOT NULL,
+  `school_id` int(11) NOT NULL,
+  `member_id` varchar(50) NOT NULL,PRIMARY KEY(pr_id,pblm_id,school_id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
