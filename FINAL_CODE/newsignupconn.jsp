@@ -1,6 +1,9 @@
 <html>
 <body>
-<form method="" action="">
+<<<<<<< HEAD
+
+<form method="post" action="">
+>>>>>>> origin/master
 select school
 <select>
  <% String url="jdbc:mysql://ec2-52-69-200-165.ap-northeast-1.compute.amazonaws.com:3306/test";
@@ -20,7 +23,11 @@ select school
 			 out.println("working2");
              if(connection!=null)
               { stmt=connection.createStatement();
+<<<<<<< HEAD
                String query1="insert into '"+ut+"' values'"('"+var1+"','"+var2+"','"+var3+"','"+var4+"');
+=======
+               String query1="insert into "+ut+" values"('"+var1+"','"+var2+"','"+var3+"','"+var4+"')";
+>>>>>>> origin/master
                stmt.updateQuery(query1);
             out.println("working3");
               

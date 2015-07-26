@@ -21,8 +21,10 @@
 <option>Admin</option>
 </select></h1>
  
-  <h1>username<input type="text" name="username"/></h1>
-  <h1>password<input type="password" name="password"/></h1>
+
+  <h1>E-mail id:<input type="text" id="username"/></h1>
+  <h1>password:<input type="password" name="password"/></h1>
+
   <input type="submit" name="submit" value="submit"/>
   </center>
  </form>

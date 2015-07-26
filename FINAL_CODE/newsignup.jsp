@@ -214,10 +214,13 @@ function myfunc4(email)
 </p>
 
 
-<form name="regform" id="regform" action="newsignupconn.java" method="post" >
+<<<<<<< HEAD
+
+<form name="regform" id="regform" action="newsignupconn.jsp" method="post" >
 <select name="utype">
 <option>member</option>
-<option>option</option>
+<option>admin</option>
+>>>>>>> origin/master
 <option>leader</option>
 
 </select>
