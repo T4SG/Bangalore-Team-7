@@ -217,7 +217,7 @@ function myfunc4(email)
 <form name="regform" id="regform" action="newsignupconn.jsp" method="post" >
 <select name="utype">
 <option>member</option>
-<option>option</option>
+<option>admin</option>
 <option>leader</option>
 
 </select>
